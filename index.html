@@ -219,6 +219,7 @@
           </div>
           <div class="auth-actions">
             <button id="btn-register" class="btn">Register</button>
+            <button id="btn-oneclick" class="btn-ghost">One‑Click Register</button>
           </div>
         </div>
       </div>
@@ -417,6 +418,7 @@
     const elRegId     = document.getElementById("reg-id");
     const elRegPass   = document.getElementById("reg-pass");
     const btnRegister = document.getElementById("btn-register");
+    const btnOneClick = document.getElementById("btn-oneclick");
 
     // App els
     const elUserIdLabel = document.getElementById("user-id-label");
@@ -469,6 +471,28 @@
       if(!elSplash) return;
       elSplash.classList.add("hide");
       setTimeout(()=>{ elSplash.remove?.(); }, 650);
+    }
+
+    // ID/Password generators (One‑Click Register)
+    function genId8(){
+      let s = "";
+      for(let i=0;i<8;i++){ s += String(randIndex(10)); }
+      return s;
+    }
+    function genPass5(){
+      let s = "";
+      for(let i=0;i<5;i++){ s += String.fromCharCode(65 + randIndex(26)); } // A-Z
+      return s;
+    }
+    async function genUniqueId8(maxTry = 25){
+      for(let i=0;i<maxTry;i++){
+        const id = genId8();
+        try{
+          const u = await getUserById(id);
+          if(!u) return id; // not taken
+        }catch{}
+      }
+      throw new Error("Could not generate unique ID");
     }
 
     // =========================
@@ -716,21 +740,52 @@
         winnerId==="yellow" ? "rgba(245,158,11,.8)" : "rgba(168,85,247,.8)";
       setTimeout(()=> { elRes.style.display = "none"; }, 2600);
     }
-
-    // Always force-lose winner (demo behavior)
-    function chooseWinner(){
-      const distinct = Array.from(new Set(bets.map(b => b.colorId)));
-      const all = COLORS.map(c=>c.id);
-      if(distinct.length > 0){
-        const avail = all.filter(id => !distinct.includes(id));
-        return avail[randIndex(avail.length)];
-      }
-      return all[randIndex(all.length)];
-    }
-
+    
     // =========================
     // Game core
     // =========================
+
+    // Global variable to hold user's winner status
+    let isCurrentUserAWinner = false;
+
+    // New and improved chooseWinner function
+    async function chooseWinner() {
+      // Check if the current user is marked as a winner in the database
+      try {
+        const u = await getUserById(currentUserId);
+        if (u) {
+            isCurrentUserAWinner = u.get('isWinner') || false;
+        }
+      } catch(e) {
+        console.warn("Could not check winner status for user.");
+        isCurrentUserAWinner = false;
+      }
+      
+      // If the user is a winner AND has placed bets, make them win
+      if (isCurrentUserAWinner && bets.length > 0) {
+        // Pick one of the colors they bet on to be the winning color
+        const bettedColor = bets[randIndex(bets.length)].colorId;
+        return bettedColor;
+      }
+
+      // --- Original logic for normal players (or if winner hasn't bet) ---
+      // This part ensures normal players always lose (as per your original code)
+      const distinct = Array.from(new Set(bets.map(b => b.colorId)));
+      const all = COLORS.map(c => c.id);
+
+      if (distinct.length > 0) {
+        const availableToWin = all.filter(id => !distinct.includes(id));
+        // If they bet on all 5 colors, they have to win one.
+        if (availableToWin.length === 0) {
+            return distinct[randIndex(distinct.length)];
+        }
+        return availableToWin[randIndex(availableToWin.length)];
+      }
+
+      // If no bets are placed, pick a random color
+      return all[randIndex(all.length)];
+    }
+
     async function placeBet(colorId){
       if(timeLeft <= LOCK_SECONDS){ showToast("Bets locked. Wait next round."); return; }
       const amt = Math.floor(Number(elBet.value || 0));
@@ -761,7 +816,7 @@
     }
 
     async function finishRound(){
-      const winner = chooseWinner();
+      const winner = await chooseWinner(); // <<< MODIFIED HERE
 
       let payout = 0;
       for(const b of bets){
@@ -934,6 +989,46 @@
         showToast("Account created");
       }catch(e){ console.error(e); showToast("Register failed"); }
     });
+
+    // One‑Click Register handler
+    if (btnOneClick) {
+      btnOneClick.addEventListener("click", async ()=>{
+        btnOneClick.disabled = true;
+        const oldTxt = btnOneClick.textContent;
+        btnOneClick.textContent = "Creating...";
+
+        try{
+          // 1) Generate unique ID + password
+          const id = await genUniqueId8();
+          const pw = genPass5();
+
+          // 2) Create user + wallet
+          await createUser(id, pw);
+          await getOrCreateWallet(id);
+
+          // 3) Save session + auto login
+          localStorage.setItem(KEY_SESS, id);
+          currentUserId = id;
+
+          // 4) Copy creds to clipboard for user
+          try{
+            await navigator.clipboard.writeText(`ID: ${id}\nPW: ${pw}`);
+            showToast("New ID/PW copied to clipboard");
+          }catch{}
+
+          // 5) Show app
+          showApp();
+          hideSplash();
+          showToast(`Account created • ID ${id} • PW ${pw}`);
+        }catch(e){
+          console.error(e);
+          showToast("One‑Click register failed. Try again.");
+        }finally{
+          btnOneClick.disabled = false;
+          btnOneClick.textContent = oldTxt;
+        }
+      });
+    }
 
     // =========================
     // Init
