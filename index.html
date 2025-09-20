@@ -147,22 +147,7 @@
   <!-- Splash / Loader -->
   <div id="splash" class="splash" aria-hidden="false">
     <div class="splash-inner">
-      <!-- AI Logo -->
-      <svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI">
-        <defs>
-          <linearGradient id="g-ai" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#7C8CFF"></stop>
-            <stop offset="55%" stop-color="#9F63FF"></stop>
-            <stop offset="100%" stop-color="#22C55E"></stop>
-          </linearGradient>
-        </defs>
-        <rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai)"></rect>
-        <!-- A -->
-        <polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon>
-        <rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect>
-        <!-- I -->
-        <rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect>
-      </svg>
+      <svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI"><defs><linearGradient id="g-ai" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C8CFF"></stop><stop offset="55%" stop-color="#9F63FF"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient></defs><rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai)"></rect><polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon><rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect><rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect></svg>
       <div class="title">ColorBet</div>
       <div class="sub">Loading your game...</div>
       <div class="bar"><span></span></div>
@@ -175,52 +160,19 @@
     <section id="auth" hidden>
       <div class="auth-wrap">
         <div class="card auth-card">
-          <div class="brand">
-            <svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI">
-              <defs>
-                <linearGradient id="g-ai2" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#7C8CFF"></stop>
-                  <stop offset="55%" stop-color="#9F63FF"></stop>
-                  <stop offset="100%" stop-color="#22C55E"></stop>
-                </linearGradient>
-              </defs>
-              <rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai2)"></rect>
-              <polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon>
-              <rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect>
-              <rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect>
-            </svg>
-            <span class="name">ColorBet</span>
-          </div>
+          <div class="brand"><svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI"><defs><linearGradient id="g-ai2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C8CFF"></stop><stop offset="55%" stop-color="#9F63FF"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient></defs><rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai2)"></rect><polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon><rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect><rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect></svg><span class="name">ColorBet</span></div>
           <h3 class="auth-title">ලොගින්</h3>
-          <div class="field">
-            <label>ඔබගේ ID (අංක 8)</label>
-            <input id="login-id" class="input" type="text" inputmode="numeric" maxlength="8" placeholder="########" />
-          </div>
-          <div class="field">
-            <label>මුරපදය (English අකුරු 5)</label>
-            <input id="login-pass" class="input" type="password" maxlength="5" placeholder="•••••" autocomplete="current-password" />
-          </div>
-          <div class="auth-actions">
-            <button id="btn-login" class="btn">Login</button>
-          </div>
+          <div class="field"><label>ඔබගේ ID (අංක 8)</label><input id="login-id" class="input" type="text" inputmode="numeric" maxlength="8" placeholder="########" /></div>
+          <div class="field"><label>මුරපදය (English අකුරු 5)</label><input id="login-pass" class="input" type="password" maxlength="5" placeholder="•••••" autocomplete="current-password" /></div>
+          <div class="auth-actions"><button id="btn-login" class="btn">Login</button></div>
           <p class="hint">ID/Password නැත්නම් පහළ Register කරගන්න.</p>
         </div>
-
         <div class="card auth-card">
           <h3 class="auth-title">Register</h3>
           <p class="hint">ID (අංක 8) / Password (අකුරු 5). (රු 1000 දීමනාව නැහැ)</p>
-          <div class="field">
-            <label>නව ID (අංක 8)</label>
-            <input id="reg-id" class="input" type="text" inputmode="numeric" maxlength="8" placeholder="########" />
-          </div>
-          <div class="field">
-            <label>නව Password (English අකුරු 5)</label>
-            <input id="reg-pass" class="input" type="password" maxlength="5" placeholder="•••••" autocomplete="new-password" />
-          </div>
-          <div class="auth-actions">
-            <button id="btn-register" class="btn">Register</button>
-            <button id="btn-oneclick" class="btn-ghost">One‑Click Register</button>
-          </div>
+          <div class="field"><label>නව ID (අංක 8)</label><input id="reg-id" class="input" type="text" inputmode="numeric" maxlength="8" placeholder="########" /></div>
+          <div class="field"><label>නව Password (English අකුරු 5)</label><input id="reg-pass" class="input" type="password" maxlength="5" placeholder="•••••" autocomplete="new-password" /></div>
+          <div class="auth-actions"><button id="btn-register" class="btn">Register</button><button id="btn-oneclick" class="btn-ghost">One‑Click Register</button></div>
         </div>
       </div>
     </section>
@@ -228,124 +180,45 @@
     <!-- APP -->
     <section id="app" hidden>
       <header class="topbar">
-        <div class="brand">
-          <svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI">
-            <defs>
-              <linearGradient id="g-ai3" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7C8CFF"></stop>
-                <stop offset="55%" stop-color="#9F63FF"></stop>
-                <stop offset="100%" stop-color="#22C55E"></stop>
-              </linearGradient>
-            </defs>
-            <rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai3)"></rect>
-            <polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon>
-            <rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect>
-            <rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect>
-          </svg>
-          <span class="name">ColorBet</span>
-        </div>
-
+        <div class="brand"><svg class="ai-logo" viewBox="0 0 28 28" role="img" aria-label="AI"><defs><linearGradient id="g-ai3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C8CFF"></stop><stop offset="55%" stop-color="#9F63FF"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient></defs><rect x="0" y="0" width="28" height="28" rx="8" fill="url(#g-ai3)"></rect><polygon points="8,21 12,7 16,21 14.6,21 13.8,18.2 10.2,18.2 9.4,21" fill="white" opacity="0.95"></polygon><rect x="10.7" y="15.1" width="4.6" height="1.6" rx="0.8" fill="white" opacity="0.95"></rect><rect x="18.2" y="7.6" width="2.1" height="13.8" rx="1.05" fill="white" opacity="0.95"></rect></svg><span class="name">ColorBet</span></div>
         <div class="card betbox">
           <div class="label">පාදම් මුදල (Min 200)</div>
-          <div class="row">
-            <input id="bet-input" type="number" min="200" step="1" value="200" />
-            <div class="chips">
-              <button class="chip" data-chip="200">+200</button>
-              <button class="chip" data-chip="500">+500</button>
-              <button class="chip" data-chip="1000">+1000</button>
-              <button class="chip" data-chip="5000">+5000</button>
-              <button class="chip warn" id="chip-max">Max</button>
-              <button class="chip" id="chip-clear">Clear</button>
-            </div>
-          </div>
+          <div class="row"><input id="bet-input" type="number" min="200" step="1" value="200" /><div class="chips"><button class="chip" data-chip="200">+200</button><button class="chip" data-chip="500">+500</button><button class="chip" data-chip="1000">+1000</button><button class="chip" data-chip="5000">+5000</button><button class="chip warn" id="chip-max">Max</button><button class="chip" id="chip-clear">Clear</button></div></div>
         </div>
-
         <div class="card userbox">
-          <div>
-            <div class="small">User</div>
-            <div style="font-weight:800" id="user-id-label">ID: --------</div>
-          </div>
+          <div><div class="small">User</div><div style="font-weight:800" id="user-id-label">ID: --------</div></div>
           <div class="user-actions">
-            <div id="wcode-chip" class="wcode-chip" style="display:none">
-              <span class="wcode-label">Code</span>
-              <span id="wcode-value" class="wcode-value" title="Click to copy">----</span>
-              <span id="wcode-amt" class="wcode-amount" title="Amount">රු 0</span>
-              <span id="wcode-timer" class="wcode-timer">15:00</span>
-            </div>
+            <div id="wcode-chip" class="wcode-chip" style="display:none"><span class="wcode-label">Code</span><span id="wcode-value" class="wcode-value" title="Click to copy">----</span><span id="wcode-amt" class="wcode-amount" title="Amount">රු 0</span><span id="wcode-timer" class="wcode-timer">15:00</span></div>
             <button id="btn-widrower" class="logout alt">Withdraw</button>
             <button id="btn-logout" class="logout">Logout</button>
           </div>
         </div>
       </header>
-
-      <div class="card balance" style="margin-bottom:10px; display:flex; align-items:center; justify-content:space-between;">
-        <div>
-          <div class="label">ඉතුරු මුදල (Balance)</div>
-          <div class="value"><span class="cur">රු</span> <span id="balance-value">0.00</span></div>
-        </div>
-      </div>
-
-      <section class="timer">
-        <span class="round-id" id="round-id">Round R-0001</span>
-        <span class="clock"><span id="time-left">20</span>s</span>
-        <span class="lock-badge" id="lock-badge" style="display:none">අගුලු ලා</span>
-        <span class="result-badge" id="result-badge" style="display:none"></span>
-      </section>
-
+      <div class="card balance" style="margin-bottom:10px; display:flex; align-items:center; justify-content:space-between;"><div><div class="label">ඉතුරු මුදල (Balance)</div><div class="value"><span class="cur">රු</span> <span id="balance-value">0.00</span></div></div></div>
+      <section class="timer"><span class="round-id" id="round-id">Round R-0001</span><span class="clock"><span id="time-left">20</span>s</span><span class="lock-badge" id="lock-badge" style="display:none">අගුලු ලා</span><span class="result-badge" id="result-badge" style="display:none"></span></section>
       <section class="colors" id="colors">
-        <button class="color-card c-red"   data-color="red"   title="රතු (Red) • Min bet 200">
-          <div class="color-name">රතු • R</div>
-          <div class="color-odds" id="odds-red">×4.5</div>
-        </button>
-        <button class="color-card c-green" data-color="green" title="කොළ (Green) • Min bet 200">
-          <div class="color-name">කොළ • G</div>
-          <div class="color-odds" id="odds-green">×4.5</div>
-        </button>
-        <button class="color-card c-blue"  data-color="blue"  title="නිල් (Blue) • Min bet 200">
-          <div class="color-name">නිල් • B</div>
-          <div class="color-odds" id="odds-blue">×4.5</div>
-        </button>
-        <button class="color-card c-yellow" data-color="yellow" title="කහ (Yellow) • Min bet 200">
-          <div class="color-name">කහ • Y</div>
-          <div class="color-odds" id="odds-yellow">×4.5</div>
-        </button>
-        <button class="color-card c-purple" data-color="purple" title="දම් (Purple) • Min bet 200">
-          <div class="color-name">දම් • P</div>
-          <div class="color-odds" id="odds-purple">×4.5</div>
-        </button>
+        <button class="color-card c-red"   data-color="red"   title="රතු (Red) • Min bet 200"><div class="color-name">රතු • R</div><div class="color-odds" id="odds-red">×4.5</div></button>
+        <button class="color-card c-green" data-color="green" title="කොළ (Green) • Min bet 200"><div class="color-name">කොළ • G</div><div class="color-odds" id="odds-green">×4.5</div></button>
+        <button class="color-card c-blue"  data-color="blue"  title="නිල් (Blue) • Min bet 200"><div class="color-name">නිල් • B</div><div class="color-odds" id="odds-blue">×4.5</div></button>
+        <button class="color-card c-yellow" data-color="yellow" title="කහ (Yellow) • Min bet 200"><div class="color-name">කහ • Y</div><div class="color-odds" id="odds-yellow">×4.5</div></button>
+        <button class="color-card c-purple" data-color="purple" title="දම් (Purple) • Min bet 200"><div class="color-name">දම් • P</div><div class="color-odds" id="odds-purple">×4.5</div></button>
       </section>
-
-      <section class="your-bets">
-        <h4 class="section-title">ඔබගේ පාදම් (වත්මන් චක්‍රය) — වර්ණ 2ක් දක්වා</h4>
-        <div class="bets-list" id="bets-list"></div>
-      </section>
-
-      <section class="history">
-        <h4 class="section-title">මෑත ප්‍රතිඵල</h4>
-        <div class="dots" id="history-dots"></div>
-      </section>
+      <section class="your-bets"><h4 class="section-title">ඔබගේ පාදම් (වත්මන් චක්‍රය) — වර්ණ 2ක් දක්වා</h4><div class="bets-list" id="bets-list"></div></section>
+      <section class="history"><h4 class="section-title">මෑත ප්‍රතිඵල</h4><div class="dots" id="history-dots"></div></section>
     </section>
   </div>
 
-  <!-- Withdraw modal -->
   <div id="wd-modal" class="modal" aria-hidden="true">
     <div class="modal-card">
       <h3 class="modal-title">Withdraw</h3>
       <p class="small">Withdraw amount එක ඇතුල් කරලා Confirm කරන්න. (Min 500)</p>
-      <div class="field" style="margin-top:8px">
-        <label>Amount (රු) — Min 500</label>
-        <input id="wd-amount" class="input" type="number" min="500" step="1" placeholder="500+" />
-      </div>
-      <div class="modal-actions">
-        <button id="wd-cancel" class="btn-ghost">Cancel</button>
-        <button id="wd-confirm" class="btn">Confirm</button>
-      </div>
+      <div class="field" style="margin-top:8px"><label>Amount (රු) — Min 500</label><input id="wd-amount" class="input" type="number" min="500" step="1" placeholder="500+" /></div>
+      <div class="modal-actions"><button id="wd-cancel" class="btn-ghost">Cancel</button><button id="wd-confirm" class="btn">Confirm</button></div>
     </div>
   </div>
 
   <div class="toast" id="toast"></div>
 
-  <!-- Parse SDK -->
   <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
   <script>
     // =========================
@@ -366,38 +239,27 @@
     const ODDS = 4.5;
     const ROUND_SECONDS = 20;
     const LOCK_SECONDS = 3;
-
-    // UPDATED limits
-    const BET_MIN = 200;          // Min bet
-    const WITHDRAW_MIN = 500;     // Min withdraw
+    const BET_MIN = 200;
+    const WITHDRAW_MIN = 500;
     const WITHDRAW_MINUTES = 15;
-
-    const COLORS = [
-      { id:"red",    name:"රතු",   cls:"c-red" },
-      { id:"green",  name:"කොළ",   cls:"c-green" },
-      { id:"blue",   name:"නිල්",   cls:"c-blue" },
-      { id:"yellow", name:"කහ",    cls:"c-yellow" },
-      { id:"purple", name:"දම්",    cls:"c-purple" },
-    ];
+    const COLORS = [{ id:"red", name:"රතු" }, { id:"green", name:"කොළ" }, { id:"blue", name:"නිල්" }, { id:"yellow", name:"කහ" }, { id:"purple", name:"දම්" }];
 
     // =========================
     // State
     // =========================
     const KEY_SESS = "CB_SESS";
     let currentUserId = null;
-
     let balance = 0;
     let walletObj = null;
     let walletSub = null;
-
+    let userSub = null; // <<< NEW: Subscription for user object changes (isDemo)
+    let isDemoUser = false; // <<< NEW: Flag to hold demo status
     let history = [];
     let roundNo = 1;
     let timeLeft = ROUND_SECONDS;
     let bets = [];
     let timerId = null;
-
-    // Withdraw state
-    let activeWithdraw = null; // Parse Object (CB_Withdraw)
+    let activeWithdraw = null;
     let wTimerId = null;
     let wSub = null;
     let isProcessingWithdraw = false;
@@ -409,18 +271,13 @@
     const elAuth  = document.getElementById("auth");
     const elApp   = document.getElementById("app");
     const elToast = document.getElementById("toast");
-
-    // Auth els
     const elLoginId   = document.getElementById("login-id");
     const elLoginPass = document.getElementById("login-pass");
     const btnLogin    = document.getElementById("btn-login");
-
     const elRegId     = document.getElementById("reg-id");
     const elRegPass   = document.getElementById("reg-pass");
     const btnRegister = document.getElementById("btn-register");
     const btnOneClick = document.getElementById("btn-oneclick");
-
-    // App els
     const elUserIdLabel = document.getElementById("user-id-label");
     const elBal = document.getElementById("balance-value");
     const elBet = document.getElementById("bet-input");
@@ -437,8 +294,6 @@
     const elWamt = document.getElementById("wcode-amt");
     const elWtimer = document.getElementById("wcode-timer");
     const colorButtons = Array.from(document.querySelectorAll(".color-card"));
-
-    // Withdraw modal els
     const wdModal = document.getElementById("wd-modal");
     const wdAmount = document.getElementById("wd-amount");
     const wdConfirm = document.getElementById("wd-confirm");
@@ -449,446 +304,202 @@
     // =========================
     const fmt = n => Number(n).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
     const two = n => n < 10 ? "0" + n : "" + n;
-    function mmss(seconds){
-      const s = Math.max(0, Math.floor(seconds));
-      return `${two(Math.floor(s/60))}:${two(s%60)}`;
-    }
-    function showToast(msg){
-      elToast.textContent = msg;
-      elToast.classList.add("show");
-      setTimeout(()=> elToast.classList.remove("show"), 2200);
-    }
-    function randIndex(n){
-      if (window.crypto?.getRandomValues) {
-        const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] % n;
-      }
-      return Math.floor(Math.random()*n);
-    }
-    function removeAuth(){
-      if(elAuth && elAuth.parentNode){ elAuth.parentNode.removeChild(elAuth); }
-    }
-    function hideSplash(){
-      if(!elSplash) return;
-      elSplash.classList.add("hide");
-      setTimeout(()=>{ elSplash.remove?.(); }, 650);
-    }
-
-    // ID/Password generators (One‑Click Register)
-    function genId8(){
-      let s = "";
-      for(let i=0;i<8;i++){ s += String(randIndex(10)); }
-      return s;
-    }
-    function genPass5(){
-      let s = "";
-      for(let i=0;i<5;i++){ s += String.fromCharCode(65 + randIndex(26)); } // A-Z
-      return s;
-    }
-    async function genUniqueId8(maxTry = 25){
-      for(let i=0;i<maxTry;i++){
-        const id = genId8();
-        try{
-          const u = await getUserById(id);
-          if(!u) return id; // not taken
-        }catch{}
-      }
-      throw new Error("Could not generate unique ID");
-    }
+    function mmss(seconds){ const s = Math.max(0, Math.floor(seconds)); return `${two(Math.floor(s/60))}:${two(s%60)}`; }
+    function showToast(msg){ elToast.textContent = msg; elToast.classList.add("show"); setTimeout(()=> elToast.classList.remove("show"), 2200); }
+    function randIndex(n){ if (window.crypto?.getRandomValues) { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] % n; } return Math.floor(Math.random()*n); }
+    function removeAuth(){ if(elAuth && elAuth.parentNode){ elAuth.parentNode.removeChild(elAuth); } }
+    function hideSplash(){ if(!elSplash) return; elSplash.classList.add("hide"); setTimeout(()=>{ elSplash.remove?.(); }, 650); }
+    function genId8(){ let s = ""; for(let i=0;i<8;i++){ s += String(randIndex(10)); } return s; }
+    function genPass5(){ let s = ""; for(let i=0;i<5;i++){ s += String.fromCharCode(65 + randIndex(26)); } return s; }
+    async function genUniqueId8(maxTry = 25){ for(let i=0;i<maxTry;i++){ const id = genId8(); try{ const u = await getUserById(id); if(!u) return id; }catch{} } throw new Error("Could not generate unique ID"); }
 
     // =========================
     // Parse helpers
     // =========================
-    async function getUserById(uid){
-      const Q = new Parse.Query("CB_User");
-      Q.equalTo("userId", uid);
-      return Q.first();
-    }
-    async function createUser(uid, pwd){
-      const u = new Parse.Object("CB_User");
-      u.set("userId", uid);
-      u.set("pwd", pwd);
-      return u.save();
-    }
-    async function getOrCreateWallet(uid){
-      const Q = new Parse.Query("CB_Wallet");
-      Q.equalTo("userId", uid);
-      let w = await Q.first();
-      if(!w){ w = new Parse.Object("CB_Wallet"); w.set("userId", uid); w.set("balance", 0); await w.save(); }
-      return w;
-    }
-    async function changeBalance(delta){
-      walletObj.increment("balance", delta);
-      await walletObj.save();
-      balance = Number(walletObj.get("balance")||0);
-      updateBalanceUI();
-    }
-    async function refreshWallet(){
-      if(!walletObj) return;
-      try {
-        await walletObj.fetch();
-        const b = Number(walletObj.get("balance")||0);
-        if(Math.abs(b - balance) > 0.0001){
-          balance = b; updateBalanceUI();
-        }
-      } catch {}
-    }
-
-    // Helpful: check if active withdraw exists (server-side)
-    async function findActiveWithdraw(){
-      const Q = new Parse.Query("CB_Withdraw");
-      Q.equalTo("userId", currentUserId);
-      Q.equalTo("status", "active");
-      Q.greaterThan("expiresAt", new Date());
-      Q.descending("createdAt");
-      return Q.first();
-    }
+    async function getUserById(uid){ const Q = new Parse.Query("CB_User"); Q.equalTo("userId", uid); return Q.first(); }
+    async function createUser(uid, pwd){ const u = new Parse.Object("CB_User"); u.set("userId", uid); u.set("pwd", pwd); return u.save(); }
+    async function getOrCreateWallet(uid){ const Q = new Parse.Query("CB_Wallet"); Q.equalTo("userId", uid); let w = await Q.first(); if(!w){ w = new Parse.Object("CB_Wallet"); w.set("userId", uid); w.set("balance", 0); await w.save(); } return w; }
+    async function changeBalance(delta){ walletObj.increment("balance", delta); await walletObj.save(); balance = Number(walletObj.get("balance")||0); updateBalanceUI(); }
+    async function refreshWallet(){ if(!walletObj) return; try { await walletObj.fetch(); const b = Number(walletObj.get("balance")||0); if(Math.abs(b - balance) > 0.0001){ balance = b; updateBalanceUI(); } } catch {} }
+    async function findActiveWithdraw(){ const Q = new Parse.Query("CB_Withdraw"); Q.equalTo("userId", currentUserId); Q.equalTo("status", "active"); Q.greaterThan("expiresAt", new Date()); Q.descending("createdAt"); return Q.first(); }
 
     // =========================
     // Withdraw (Parse)
     // =========================
-    function clearWithdrawTimer(){
-      if(wTimerId){ clearInterval(wTimerId); wTimerId = null; }
-    }
+    function clearWithdrawTimer(){ if(wTimerId){ clearInterval(wTimerId); wTimerId = null; } }
     async function loadWithdrawState(){
       clearWithdrawTimer();
       if(wSub){ try{ wSub.unsubscribe(); }catch{} wSub=null; }
-
       const w = await findActiveWithdraw();
       if(w){
         activeWithdraw = w;
-        showWithdrawUI(
-          w.get("code"),
-          w.get("expiresAt").getTime(),
-          Number(w.get("amount")||0),
-          w.id
-        );
+        showWithdrawUI(w.get("code"), w.get("expiresAt").getTime(), Number(w.get("amount")||0), w.id);
         try{
           const q2 = new Parse.Query("CB_Withdraw"); q2.equalTo("objectId", w.id);
           wSub = await q2.subscribe();
-          wSub.on("update", (obj)=>{
-            const st = obj.get("status");
-            if(st !== "active"){
-              clearWithdrawTimer();
-              hideWithdrawUI();
-              showToast(st === "claimed" ? "Withdraw claimed" : "Withdraw expired");
-              activeWithdraw = null;
-            }
-          });
+          wSub.on("update", (obj)=>{ const st = obj.get("status"); if(st !== "active"){ clearWithdrawTimer(); hideWithdrawUI(); showToast(st === "claimed" ? "Withdraw claimed" : "Withdraw expired"); activeWithdraw = null; } });
         }catch{}
-      } else {
-        activeWithdraw = null;
-        hideWithdrawUI();
-      }
+      } else { activeWithdraw = null; hideWithdrawUI(); }
     }
     function showWithdrawUI(code, expMs, amount, objId){
       const leftSec = Math.max(0, Math.floor((expMs - Date.now())/1000));
       if(leftSec <= 0){ hideWithdrawUI(); return; }
-      elWcode.textContent = code;
-      elWamt.textContent = `රු ${fmt(amount)}`;
-      elWtimer.textContent = mmss(leftSec);
+      elWcode.textContent = code; elWamt.textContent = `රු ${fmt(amount)}`; elWtimer.textContent = mmss(leftSec);
       wChip.style.display = "inline-flex";
-      btnWid.disabled = true;
-
-      elWcode.onclick = async ()=>{
-        try{ await navigator.clipboard.writeText(code); showToast("Code copied"); }catch{}
-      }
-
+      btnWid.disabled = true; // Always disable when a code is active
+      elWcode.onclick = async ()=>{ try{ await navigator.clipboard.writeText(code); showToast("Code copied"); }catch{} }
       clearWithdrawTimer();
       wTimerId = setInterval(async ()=>{
         const s = Math.max(0, Math.floor((expMs - Date.now())/1000));
         elWtimer.textContent = mmss(s);
         if(s <= 0){
           clearWithdrawTimer();
-          try{
-            const obj = await new Parse.Query("CB_Withdraw").get(objId);
-            if(obj.get("status") === "active"){
-              obj.set("status","expired"); obj.set("expiredAt", new Date());
-              await obj.save();
-              await changeBalance(+Number(obj.get("amount")||0));
-              showToast("Withdraw code expired — refunded");
-            }
-          }catch{}
-          hideWithdrawUI();
-          activeWithdraw = null;
+          try{ const obj = await new Parse.Query("CB_Withdraw").get(objId); if(obj.get("status") === "active"){ obj.set("status","expired"); obj.set("expiredAt", new Date()); await obj.save(); await changeBalance(+Number(obj.get("amount")||0)); showToast("Withdraw code expired — refunded"); } }catch{}
+          hideWithdrawUI(); activeWithdraw = null;
         }
       }, 1000);
     }
     function hideWithdrawUI(){
       wChip.style.display = "none";
-      btnWid.disabled = false;
+      // <<< MODIFIED: Re-apply demo mode disable status
+      btnWid.disabled = isDemoUser;
     }
-    function openWithdrawModal(){
-      if(activeWithdraw){ showToast("Active withdraw code already exists"); return; }
-      wdAmount.value = "500";
-      wdModal.classList.add("show");
-      wdAmount.focus();
-    }
+    function openWithdrawModal(){ if(activeWithdraw){ showToast("Active withdraw code already exists"); return; } wdAmount.value = "500"; wdModal.classList.add("show"); wdAmount.focus(); }
     function closeWithdrawModal(){ wdModal.classList.remove("show"); }
-
     async function handleWithdrawConfirm(){
       if(isProcessingWithdraw) return;
       const amt = Math.floor(Number(wdAmount.value || 0));
       if(!Number.isFinite(amt) || amt <= 0){ showToast("Valid amount එකක් දාන්න"); return; }
       if(amt < WITHDRAW_MIN){ showToast(`Min withdraw රු ${fmt(WITHDRAW_MIN)}`); return; }
-
-      wdConfirm.disabled = true; wdConfirm.textContent = "Processing...";
-      isProcessingWithdraw = true;
-
+      wdConfirm.disabled = true; wdConfirm.textContent = "Processing..."; isProcessingWithdraw = true;
       try{
-        // Prevent double withdraw: check server for active one before debiting
         const existing = await findActiveWithdraw();
-        if(existing){
-          closeWithdrawModal();
-          activeWithdraw = existing;
-          showWithdrawUI(existing.get("code"), existing.get("expiresAt").getTime(), Number(existing.get("amount")||0), existing.id);
-          showToast("Active withdraw code already exists");
-          return;
-        }
-
+        if(existing){ closeWithdrawModal(); activeWithdraw = existing; showWithdrawUI(existing.get("code"), existing.get("expiresAt").getTime(), Number(existing.get("amount")||0), existing.id); showToast("Active withdraw code already exists"); return; }
         await refreshWallet();
         if(amt > balance){ showToast("Insufficient balance"); return; }
-
         await changeBalance(-amt);
         const code = String(Math.floor(1000 + Math.random()*9000));
         const expiry = new Date(Date.now() + WITHDRAW_MINUTES * 60 * 1000);
-
-        const W = new Parse.Object("CB_Withdraw");
-        W.set("userId", currentUserId);
-        W.set("code", code);
-        W.set("amount", amt);
-        W.set("status", "active");
-        W.set("expiresAt", expiry);
-        await W.save();
-
-        closeWithdrawModal();
-        showWithdrawUI(code, expiry.getTime(), amt, W.id);
-        activeWithdraw = W;
-        showToast("Withdraw code created");
-      }catch(e){
-        console.error(e);
-        // If debit happened but creation failed, try refund
-        try{ await changeBalance(+amt); }catch{}
-        showToast("Withdraw failed");
-      } finally {
-        wdConfirm.disabled = false; wdConfirm.textContent = "Confirm";
-        isProcessingWithdraw = false;
-      }
+        const W = new Parse.Object("CB_Withdraw"); W.set("userId", currentUserId); W.set("code", code); W.set("amount", amt); W.set("status", "active"); W.set("expiresAt", expiry); await W.save();
+        closeWithdrawModal(); showWithdrawUI(code, expiry.getTime(), amt, W.id); activeWithdraw = W; showToast("Withdraw code created");
+      }catch(e){ console.error(e); try{ await changeBalance(+amt); }catch{} showToast("Withdraw failed"); } finally { wdConfirm.disabled = false; wdConfirm.textContent = "Confirm"; isProcessingWithdraw = false; }
     }
 
     // =========================
     // Game UI updates
     // =========================
     function updateBalanceUI(){ elBal.textContent = fmt(balance); }
-    function updateRoundUI(){
-      const idStr = String(roundNo).padStart(4, "0");
-      elRoundId.textContent = `Round R-${idStr}`;
-    }
-    function updateTimerUI(){
-      elTime.textContent = timeLeft;
-      const locked = timeLeft <= LOCK_SECONDS;
-      elLock.style.display = locked ? "inline-flex" : "none";
-      colorButtons.forEach(b => b.disabled = locked);
-    }
+    function updateRoundUI(){ const idStr = String(roundNo).padStart(4, "0"); elRoundId.textContent = `Round R-${idStr}`; }
+    function updateTimerUI(){ elTime.textContent = timeLeft; const locked = timeLeft <= LOCK_SECONDS; elLock.style.display = locked ? "inline-flex" : "none"; colorButtons.forEach(b => b.disabled = locked); }
     function updateBetsUI(){
       elBets.innerHTML = "";
-      if(bets.length === 0){
-        elBets.innerHTML = '<span class="bet-chip" style="opacity:.7">No bets yet</span>';
-        return;
-      }
+      if(bets.length === 0){ elBets.innerHTML = '<span class="bet-chip" style="opacity:.7">No bets yet</span>'; return; }
       for(const b of bets){
         const col = COLORS.find(c => c.id === b.colorId);
-        const colorStyle =
-          col.id === "red" ? "background:#2a0e0e;border-color:#5b1a1a" :
-          col.id === "green" ? "background:#0f2a17;border-color:#1a4d2c" :
-          col.id === "blue" ? "background:#0d1d39;border-color:#1a3a73" :
-          col.id === "yellow" ? "background:#2a230e;border-color:#4d3e1a" :
-          "background:#261339;border-color:#4a2673";
-        const chip = document.createElement("span");
-        chip.className = "bet-chip";
-        chip.style = colorStyle;
-        chip.textContent = `${col.name} • රු ${fmt(b.amount)}`;
-        elBets.appendChild(chip);
+        const colorStyle = b.colorId === "red" ? "background:#2a0e0e;border-color:#5b1a1a" : b.colorId === "green" ? "background:#0f2a17;border-color:#1a4d2c" : b.colorId === "blue" ? "background:#0d1d39;border-color:#1a3a73" : b.colorId === "yellow" ? "background:#2a230e;border-color:#4d3e1a" : "background:#261339;border-color:#4a2673";
+        const chip = document.createElement("span"); chip.className = "bet-chip"; chip.style = colorStyle; chip.textContent = `${col.name} • රු ${fmt(b.amount)}`; elBets.appendChild(chip);
       }
     }
     function updateHistoryUI(){
       elHist.innerHTML = "";
       const last = history.slice(-20).reverse();
       for(const id of last){
-        const span = document.createElement("span");
-        span.className = "dot";
-        span.title = id;
-        span.style.background =
-          id==="red"    ? "var(--c-red)" :
-          id==="green"  ? "var(--c-green)" :
-          id==="blue"   ? "var(--c-blue)" :
-          id==="yellow" ? "var(--c-yellow)" : "var(--c-purple)";
+        const span = document.createElement("span"); span.className = "dot"; span.title = id;
+        span.style.background = id==="red" ? "var(--c-red)" : id==="green" ? "var(--c-green)" : id==="blue" ? "var(--c-blue)" : id==="yellow" ? "var(--c-yellow)" : "var(--c-purple)";
         elHist.appendChild(span);
       }
     }
     function flashResult(winnerId, winAmount){
-      const label =
-        winnerId==="red" ? "රතු" :
-        winnerId==="green" ? "කොළ" :
-        winnerId==="blue" ? "නිල්" :
-        winnerId==="yellow" ? "කහ" : "දම්";
+      const label = COLORS.find(c => c.id === winnerId)?.name || winnerId;
       elRes.style.display = "inline-flex";
       elRes.textContent = `Win: ${label} (×${ODDS}) • ${winAmount>0 ? "ඔබට රු " + fmt(winAmount) + " 🏆" : "No payout"}`;
-      elRes.style.borderColor =
-        winnerId==="red" ? "rgba(239,68,68,.8)" :
-        winnerId==="green" ? "rgba(34,197,94,.8)" :
-        winnerId==="blue" ? "rgba(59,130,246,.8)" :
-        winnerId==="yellow" ? "rgba(245,158,11,.8)" : "rgba(168,85,247,.8)";
+      elRes.style.borderColor = winnerId==="red" ? "rgba(239,68,68,.8)" : winnerId==="green" ? "rgba(34,197,94,.8)" : winnerId==="blue" ? "rgba(59,130,246,.8)" : winnerId==="yellow" ? "rgba(245,158,11,.8)" : "rgba(168,85,247,.8)";
       setTimeout(()=> { elRes.style.display = "none"; }, 2600);
     }
     
     // =========================
     // Game core
     // =========================
-
-    // Global variable to hold user's winner status
     let isCurrentUserAWinner = false;
-
-    // New and improved chooseWinner function
     async function chooseWinner() {
-      // Check if the current user is marked as a winner in the database
-      try {
-        const u = await getUserById(currentUserId);
-        if (u) {
-            isCurrentUserAWinner = u.get('isWinner') || false;
-        }
-      } catch(e) {
-        console.warn("Could not check winner status for user.");
-        isCurrentUserAWinner = false;
-      }
-      
-      // If the user is a winner AND has placed bets, make them win
-      if (isCurrentUserAWinner && bets.length > 0) {
-        // Pick one of the colors they bet on to be the winning color
-        const bettedColor = bets[randIndex(bets.length)].colorId;
-        return bettedColor;
-      }
-
-      // --- Original logic for normal players (or if winner hasn't bet) ---
-      // This part ensures normal players always lose (as per your original code)
-      const distinct = Array.from(new Set(bets.map(b => b.colorId)));
-      const all = COLORS.map(c => c.id);
-
-      if (distinct.length > 0) {
-        const availableToWin = all.filter(id => !distinct.includes(id));
-        // If they bet on all 5 colors, they have to win one.
-        if (availableToWin.length === 0) {
-            return distinct[randIndex(distinct.length)];
-        }
-        return availableToWin[randIndex(availableToWin.length)];
-      }
-
-      // If no bets are placed, pick a random color
+      try { const u = await getUserById(currentUserId); if (u) { isCurrentUserAWinner = u.get('isWinner') || false; } } catch(e) { console.warn("Could not check winner status for user."); isCurrentUserAWinner = false; }
+      if (isCurrentUserAWinner && bets.length > 0) { const bettedColor = bets[randIndex(bets.length)].colorId; return bettedColor; }
+      const distinct = Array.from(new Set(bets.map(b => b.colorId))); const all = COLORS.map(c => c.id);
+      if (distinct.length > 0) { const availableToWin = all.filter(id => !distinct.includes(id)); if (availableToWin.length === 0) { return distinct[randIndex(distinct.length)]; } return availableToWin[randIndex(availableToWin.length)]; }
       return all[randIndex(all.length)];
     }
-
     async function placeBet(colorId){
       if(timeLeft <= LOCK_SECONDS){ showToast("Bets locked. Wait next round."); return; }
       const amt = Math.floor(Number(elBet.value || 0));
       if(!Number.isFinite(amt) || amt <= 0){ showToast("Bet amount දාන්න"); return; }
       if(amt < BET_MIN){ showToast(`Min bet රු ${fmt(BET_MIN)}`); return; }
-
       await refreshWallet();
       if(amt > balance){ showToast("Insufficient balance"); return; }
-
       const distinct = new Set(bets.map(b => b.colorId));
-      if(!distinct.has(colorId) && distinct.size >= 2){
-        showToast("Max colors 2 per round");
-        return;
-      }
-
-      try{
-        await changeBalance(-amt);
-      } catch(e){
-        showToast("Balance update failed");
-        return;
-      }
-
-      bets.push({ colorId, amount: amt });
-      updateBetsUI();
-
-      const col = COLORS.find(c => c.id === colorId);
-      showToast(`Bet placed: ${col.name} • රු ${fmt(amt)}`);
+      if(!distinct.has(colorId) && distinct.size >= 2){ showToast("Max colors 2 per round"); return; }
+      try{ await changeBalance(-amt); } catch(e){ showToast("Balance update failed"); return; }
+      bets.push({ colorId, amount: amt }); updateBetsUI();
+      const col = COLORS.find(c => c.id === colorId); showToast(`Bet placed: ${col.name} • රු ${fmt(amt)}`);
     }
-
     async function finishRound(){
-      const winner = await chooseWinner(); // <<< MODIFIED HERE
-
+      const winner = await chooseWinner();
       let payout = 0;
-      for(const b of bets){
-        if(b.colorId === winner){
-          payout += b.amount * ODDS;
-        }
-      }
-      if(payout > 0){
-        try{ await changeBalance(+payout); }catch{}
-      }
-
-      history.push(winner);
-      if(history.length > 200) history = history.slice(-200);
-      updateHistoryUI();
-      flashResult(winner, payout);
-
-      bets = [];
-      updateBetsUI();
-      roundNo += 1; updateRoundUI();
-
-      timeLeft = ROUND_SECONDS;
-      updateTimerUI();
+      for(const b of bets){ if(b.colorId === winner){ payout += b.amount * ODDS; } }
+      if(payout > 0){ try{ await changeBalance(+payout); }catch{} }
+      history.push(winner); if(history.length > 200) history = history.slice(-200);
+      updateHistoryUI(); flashResult(winner, payout);
+      bets = []; updateBetsUI(); roundNo += 1; updateRoundUI(); timeLeft = ROUND_SECONDS; updateTimerUI();
     }
-
-    function tick(){
-      timeLeft -= 1;
-      if(timeLeft <= 0){
-        finishRound();
-      } else {
-        updateTimerUI();
-      }
-    }
-
-    function startTimer(){
-      stopTimer();
-      updateTimerUI();
-      timerId = setInterval(tick, 1000);
-    }
-    function stopTimer(){
-      if(timerId){ clearInterval(timerId); timerId = null; }
-    }
+    function tick(){ timeLeft -= 1; if(timeLeft <= 0){ finishRound(); } else { updateTimerUI(); } }
+    function startTimer(){ stopTimer(); updateTimerUI(); timerId = setInterval(tick, 1000); }
+    function stopTimer(){ if(timerId){ clearInterval(timerId); timerId = null; } }
 
     // =========================
     // App lifecycle
     // =========================
     async function loadUserState(){
-      history = [];
-      roundNo = 1;
-      timeLeft = ROUND_SECONDS;
-      bets = [];
+      // <<< MODIFIED: Function to handle demo status
+      const handleDemoStatus = (userObject) => {
+          if (!userObject) return;
+          const isDemo = userObject.get("isDemo") || false;
+          isDemoUser = isDemo; // Update global flag
+          btnWid.disabled = isDemo; // Disable/enable withdraw button
+          if(isDemo) {
+              showToast("Demo Mode is Active. Withdraw disabled.");
+          }
+      };
 
+      // Unsubscribe from previous user if any
+      if(userSub) try { userSub.unsubscribe(); } catch {}
+      userSub = null;
+
+      history = []; roundNo = 1; timeLeft = ROUND_SECONDS; bets = [];
       elUserIdLabel.textContent = `ID: ${currentUserId}`;
-      updateBetsUI();
-      updateHistoryUI();
-      updateRoundUI();
-      ["odds-red","odds-green","odds-blue","odds-yellow","odds-purple"].forEach(id=>{
-        const el = document.getElementById(id); if(el) el.textContent = `×${ODDS}`;
-      });
+      updateBetsUI(); updateHistoryUI(); updateRoundUI();
+      document.querySelectorAll("[id^=odds-]").forEach(el => el.textContent = `×${ODDS}`);
 
       walletObj = await getOrCreateWallet(currentUserId);
       balance = Number(walletObj.get("balance")||0);
       updateBalanceUI();
 
+      // <<< NEW: Fetch user object to check for isDemo flag on load
+      const userObj = await getUserById(currentUserId);
+      handleDemoStatus(userObj);
+
       try{
-        const q = new Parse.Query("CB_Wallet");
-        q.equalTo("objectId", walletObj.id);
-        walletSub = await q.subscribe();
-        walletSub.on("update", (obj)=>{
-          const b = Number(obj.get("balance")||0);
-          balance = b; updateBalanceUI();
+        const qWallet = new Parse.Query("CB_Wallet"); qWallet.equalTo("objectId", walletObj.id);
+        walletSub = await qWallet.subscribe();
+        walletSub.on("update", (obj)=>{ balance = Number(obj.get("balance")||0); updateBalanceUI(); });
+
+        // <<< NEW: LiveQuery subscription for the user object
+        const qUser = new Parse.Query("CB_User"); qUser.equalTo("userId", currentUserId);
+        userSub = await qUser.subscribe();
+        userSub.on("update", (updatedUser) => {
+            console.log("User object updated, re-checking demo status.");
+            handleDemoStatus(updatedUser);
         });
-      }catch(e){ console.warn("Wallet LiveQuery failed; using polling"); }
+
+      }catch(e){ console.warn("LiveQuery failed; using polling for wallet", e); }
 
       setInterval(refreshWallet, 4000);
       window.addEventListener("focus", refreshWallet);
@@ -897,54 +508,29 @@
       await loadWithdrawState();
     }
 
-    function showApp(){
-      elApp.hidden = false;
-      removeAuth(); // remove login/register page entirely
-      loadUserState();
-      startTimer();
-      window.scrollTo(0,0);
-    }
-
-    function showAuth(){
-      stopTimer();
-      elApp.hidden = true;
-      if(elAuth) elAuth.hidden = false;
-    }
+    function showApp(){ elApp.hidden = false; removeAuth(); loadUserState(); startTimer(); window.scrollTo(0,0); }
+    function showAuth(){ stopTimer(); elApp.hidden = true; if(elAuth) elAuth.hidden = false; }
 
     // =========================
     // Wire events
     // =========================
-    // Betting UI
-    colorButtons.forEach(btn=>{
-      btn.addEventListener("click", ()=> placeBet(btn.dataset.color));
-    });
-    document.querySelectorAll("[data-chip]").forEach(ch=>{
-      ch.addEventListener("click", ()=>{
-        const v = Number(ch.dataset.chip);
-        const next = Math.max(0, Math.round((Number(elBet.value||0) + v)));
-        elBet.value = String(next);
-      });
-    });
-    document.getElementById("chip-max").addEventListener("click", ()=>{
-      elBet.value = String(Math.max(0, Math.floor(balance)));
-    });
-    document.getElementById("chip-clear").addEventListener("click", ()=>{
-      elBet.value = "0";
-    });
-
-    // Withdraw
+    colorButtons.forEach(btn=> btn.addEventListener("click", ()=> placeBet(btn.dataset.color)));
+    document.querySelectorAll("[data-chip]").forEach(ch => ch.addEventListener("click", ()=> elBet.value = String(Math.max(0, Math.round((Number(elBet.value||0) + Number(ch.dataset.chip)))))));
+    document.getElementById("chip-max").addEventListener("click", ()=> elBet.value = String(Math.max(0, Math.floor(balance))));
+    document.getElementById("chip-clear").addEventListener("click", ()=> elBet.value = "0");
     btnWid.addEventListener("click", openWithdrawModal);
     wdCancel.addEventListener("click", closeWithdrawModal);
     wdConfirm.addEventListener("click", handleWithdrawConfirm);
     wdModal.addEventListener("click", (e)=>{ if(e.target === wdModal) closeWithdrawModal(); });
 
-    // Logout (manual only – no auto logout)
     elBtnLogout.addEventListener("click", ()=>{
+      // <<< MODIFIED: Unsubscribe on logout
+      if(walletSub) try { walletSub.unsubscribe(); } catch {}
+      if(userSub) try { userSub.unsubscribe(); } catch {}
       localStorage.removeItem(KEY_SESS);
       location.reload();
     });
 
-    // Auth helpers
     const toDigits8 = s => (s||"").replace(/\D/g,"").slice(0,8);
     const toLetters5 = s => (s||"").replace(/[^A-Za-z]/g,"").toUpperCase().slice(0,5);
     [elLoginId, elRegId].forEach(el => el.addEventListener("input", e=> e.target.value = toDigits8(e.target.value)));
@@ -952,81 +538,20 @@
     [elLoginId, elLoginPass].forEach(el => el.addEventListener('keydown', e=>{ if(e.key==='Enter') btnLogin.click(); }));
     [elRegId, elRegPass].forEach(el => el.addEventListener('keydown', e=>{ if(e.key==='Enter') btnRegister.click(); }));
 
-    // Auth handlers (Parse)
     btnLogin.addEventListener("click", async ()=>{
-      const id = (elLoginId.value || "").trim();
-      const pw = toLetters5(elLoginPass.value || "");
-      if(!/^\d{8}$/.test(id)){ showToast("ID අංක 8ක් දෙන්න"); return; }
-      if(!/^[A-Z]{5}$/.test(pw)){ showToast("Password අකුරු 5ක් (English)"); return; }
-
-      try{
-        const u = await getUserById(id);
-        if(!u){ showToast("Account not found"); return; }
-        if((u.get("pwd")||"") !== pw){ showToast("Wrong password"); return; }
-        localStorage.setItem(KEY_SESS, id);
-        currentUserId = id;
-        showApp();
-        hideSplash();
-      }catch(e){ showToast("Login failed"); }
+      const id = (elLoginId.value || "").trim(); const pw = toLetters5(elLoginPass.value || "");
+      if(!/^\d{8}$/.test(id)){ showToast("ID අංක 8ක් දෙන්න"); return; } if(!/^[A-Z]{5}$/.test(pw)){ showToast("Password අකුරු 5ක් (English)"); return; }
+      try{ const u = await getUserById(id); if(!u){ showToast("Account not found"); return; } if((u.get("pwd")||"") !== pw){ showToast("Wrong password"); return; } localStorage.setItem(KEY_SESS, id); currentUserId = id; showApp(); hideSplash(); }catch(e){ showToast("Login failed"); }
     });
-
     btnRegister.addEventListener("click", async ()=>{
-      const id = (elRegId.value || "").trim();
-      const pw = toLetters5(elRegPass.value || "");
-      if(!/^\d{8}$/.test(id)){ showToast("ID අංක 8ක් දෙන්න"); return; }
-      if(!/^[A-Z]{5}$/.test(pw)){ showToast("Password අකුරු 5ක් (English)"); return; }
-
-      try{
-        const existing = await getUserById(id);
-        if(existing){ showToast("මෙම ID දැනටම තියෙනවා"); return; }
-
-        await createUser(id, pw);
-        await getOrCreateWallet(id); // balance 0 (no starting gift)
-        localStorage.setItem(KEY_SESS, id);
-        currentUserId = id;
-        showApp();
-        hideSplash();
-        showToast("Account created");
-      }catch(e){ console.error(e); showToast("Register failed"); }
+      const id = (elRegId.value || "").trim(); const pw = toLetters5(elRegPass.value || "");
+      if(!/^\d{8}$/.test(id)){ showToast("ID අංක 8ක් දෙන්න"); return; } if(!/^[A-Z]{5}$/.test(pw)){ showToast("Password අකුරු 5ක් (English)"); return; }
+      try{ const existing = await getUserById(id); if(existing){ showToast("මෙම ID දැනටම තියෙනවා"); return; } await createUser(id, pw); await getOrCreateWallet(id); localStorage.setItem(KEY_SESS, id); currentUserId = id; showApp(); hideSplash(); showToast("Account created"); }catch(e){ console.error(e); showToast("Register failed"); }
     });
-
-    // One‑Click Register handler
-    if (btnOneClick) {
+    if(btnOneClick){
       btnOneClick.addEventListener("click", async ()=>{
-        btnOneClick.disabled = true;
-        const oldTxt = btnOneClick.textContent;
-        btnOneClick.textContent = "Creating...";
-
-        try{
-          // 1) Generate unique ID + password
-          const id = await genUniqueId8();
-          const pw = genPass5();
-
-          // 2) Create user + wallet
-          await createUser(id, pw);
-          await getOrCreateWallet(id);
-
-          // 3) Save session + auto login
-          localStorage.setItem(KEY_SESS, id);
-          currentUserId = id;
-
-          // 4) Copy creds to clipboard for user
-          try{
-            await navigator.clipboard.writeText(`ID: ${id}\nPW: ${pw}`);
-            showToast("New ID/PW copied to clipboard");
-          }catch{}
-
-          // 5) Show app
-          showApp();
-          hideSplash();
-          showToast(`Account created • ID ${id} • PW ${pw}`);
-        }catch(e){
-          console.error(e);
-          showToast("One‑Click register failed. Try again.");
-        }finally{
-          btnOneClick.disabled = false;
-          btnOneClick.textContent = oldTxt;
-        }
+        btnOneClick.disabled = true; const oldTxt = btnOneClick.textContent; btnOneClick.textContent = "Creating...";
+        try{ const id = await genUniqueId8(); const pw = genPass5(); await createUser(id, pw); await getOrCreateWallet(id); localStorage.setItem(KEY_SESS, id); currentUserId = id; try{ await navigator.clipboard.writeText(`ID: ${id}\nPW: ${pw}`); showToast("New ID/PW copied to clipboard"); }catch{} showApp(); hideSplash(); showToast(`Account created • ID ${id} • PW ${pw}`); }catch(e){ console.error(e); showToast("One‑Click register failed. Try again."); }finally{ btnOneClick.disabled = false; btnOneClick.textContent = oldTxt; }
       });
     }
 
@@ -1034,19 +559,10 @@
     // Init
     // =========================
     async function init(){
-      // keep splash at least a short moment for nice effect
       await new Promise(r => setTimeout(r, 450));
-
       const sess = localStorage.getItem(KEY_SESS);
-      if(sess){
-        try{
-          const u = await getUserById(sess);
-          if(u){ currentUserId = sess; showApp(); hideSplash(); return; }
-        }catch{}
-      }
-      // No session -> show auth
-      if(elAuth) elAuth.hidden = false;
-      hideSplash();
+      if(sess){ try{ const u = await getUserById(sess); if(u){ currentUserId = sess; showApp(); hideSplash(); return; } }catch{} }
+      if(elAuth) elAuth.hidden = false; hideSplash();
     }
     init();
   </script>
